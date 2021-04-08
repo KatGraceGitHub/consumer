@@ -3,13 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>consumerproducer</groupId>
+    <groupId>producerconsumer</groupId>
     <artifactId>pc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pc</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
     <modules>
         <module>consumer</module>
-        <module>JavaGroupAssignment1</module>
+        <module>JavaGroupAssignment</module>
 
     </modules>
 
