@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My hobbies</title>
+    <link href="/css/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="center" id="mainDiv">
+
+    <h3>List of all my Hobbies</h3>
+    <h2>
+        <a href="/hobby/add"> Add a Hobby</a>
+    </h2>
+    <br/>
+    <div class="addMemberTable">
+        <table border="1">
+            <thead>
+            <tr style="font-weight: bold;">
+                <td>Hobby ID</td>
+                <td>Hobby Name</td>
+                <td>Hobby Description</td>
+                <td>Hobby Category</td>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="hobby: ${hobbies}">
+                <td th:text="${hobby.hobbyId}"></td>
+                <td th:text="${hobby.hobbyName}"></td>
+                <td th:text="${hobby.hobbyDescription}"></td>
+                <td th:text="${hobby.hobbyCategory}"></td>
+                <td><a th:href="@{/hobby/update/{id}(id=${hobby.hobbyId})}">Update</a></td>
+                <td><a th:href="@{/hobby/delete/{id}(id=${hobby.hobbyId})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>
+        <a href="/">Home</a>
+    </h2>
+</div>
+</body>
+</html>

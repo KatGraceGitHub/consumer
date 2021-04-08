@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Members Page</title>
+    <link href="/css/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="center" id="mainDiv">
+
+    <h3>List of all the members</h3>
+    <h2>
+        <a href="/member/add"> Add Member</a>
+    </h2>
+    <br/>
+    <div class="addMemberTable">
+        <table border="1">
+            <thead>
+            <tr style="font-weight: bold;">
+                <td>Member ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="member: ${members}">
+                <td th:text="${member.memberId}"></td>
+                <td th:text="${member.firstName}"></td>
+                <td th:text="${member.lastName}"></td>
+                <td th:text="${member.email}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>
+        <a href="/">Home</a>
+    </h2>
+</div>
+</body>
+</html>
