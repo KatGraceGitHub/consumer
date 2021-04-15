@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df3c835e-f4b8-4cf6-ac50-9c96866493c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/producer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jee3060/producer/ProducerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jee3060/producer/config/ProducerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jee3060/producer/model/Hobby.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/jee3060/producer/service/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/test/java/jee3060/producer/ProducerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaGroupAssignment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,22 +62,10 @@
       <option name="presentableId" value="Default" />
       <updated>1617890044148</updated>
       <workItem from="1617890045307" duration="69000" />
-      <workItem from="1618523240621" duration="1516000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
