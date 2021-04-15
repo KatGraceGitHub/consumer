@@ -2,6 +2,7 @@ package jee3060.design.controller;
 
 import jee3060.design.model.Hobby;
 import jee3060.design.repository.HobbyRep;
+import jee3060.design.service.Producer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +18,9 @@ import java.util.Optional;
 public class HobbyController {
     @Autowired
     HobbyRep hobbyRep;
+
+    @Autowired
+    Producer producer;
 
     @GetMapping("/hobbies")
     public String showAllHobbies(Model model) {
@@ -59,6 +63,7 @@ public class HobbyController {
     @PostMapping("/add")
     public String addNewHobby(@ModelAttribute("") Hobby hobby) {
         log.info(" GetMapping addNewHobby");
+        producer.sendMessage(hobby);
         hobbyRep.save(hobby);
         return "redirect:/hobby/hobbies";
     }
